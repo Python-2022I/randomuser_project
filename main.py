@@ -10,3 +10,15 @@ print(user.get_last_name())
 
 # Print the full name of the user
 print(user.get_full_name())
+
+
+print(user.get_email())
+
+
+print(user.get_phone())
+
+
+print(user.get_location())
+
+
+print(user.get_picture())
