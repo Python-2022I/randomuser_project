@@ -26,6 +26,7 @@ class RandomUser:
         Returns the full name of the user.
         """
         return f"{self.get_first_name()} {self.get_last_name()}"
+
     def get_email_name(self)->str:
         """
         Returns the email name of the user.
