@@ -26,25 +26,30 @@ class RandomUser:
         Returns the full name of the user.
         """
         return f"{self.get_first_name()} {self.get_last_name()}"
-    def get_email(self):
+
+    def get_email_name(self)->str:
         """
-        Returns the email of the user
+        Returns the email name of the user.
         """
-        return self._data['email']
-    def get_phone(self):
+        return self._data["email"]
+    def get_phone_name(self)->str:
         """
-        Returns the phone number of the random user
+         Returns the phone name of the user
         """
-        return self._data['phone']
-    def get_location(self):
+        return self._data["phone"]
+    def get_location_name(self)->str:
         """
-        Returns the location of the random user
+         Returns the locaion name of the user
         """
-        l=self._data['location']
-        return l 
-    def get_picture(self):
+        return self._data["location"]
+    def get_picture_name(self)->str:
+         """
+         Returns the picture name of the user
         """
-        Returns the picture of the random user
+         return self._data["picture"]
+    def get_users(self):
         """
-        return self._data['picture']
-    
+         Returns a list of RandomUser objects
+        """
+        return f'{self.get_first_name()} {self.get_last_name()} {self.get_full_name()} {self.get_email_name()} {self.get_location_name()} {self.get_picture_name}'
+
