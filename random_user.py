@@ -47,5 +47,3 @@ class RandomUser:
         Returns the picture of the random user
         """
         return self._data['picture']
-
-        
